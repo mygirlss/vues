@@ -1,0 +1,33 @@
+@mixin my-home($a,$b) {
+    color:$a;
+    border:1px solid $b;
+}
+h1,h2 {
+    font-weight: normal;
+    @extend .a;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.a {
+    font-size: 16px;
+    color: #42b983 ;
+}
+a{
+    @extend .a;
+    @include my-home(red,skyblue)
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+    @extend .a;
+}
+.wrapper{
+    width: 100%;
+    position:absolute;
+    top: 45px;
+    bottom: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
