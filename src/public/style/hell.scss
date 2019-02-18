@@ -1,3 +1,4 @@
+
 @mixin my-home($a,$b) {
     color:$a;
     border:1px solid $b;
@@ -11,7 +12,7 @@ ul {
     padding: 0;
 }
 .a {
-    font-size: 16px;
+    font-size: 16px/$ppr;
     color: #42b983 ;
 }
 a{

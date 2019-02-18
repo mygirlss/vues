@@ -3,7 +3,7 @@
     <div class="wrapper" ref="wrapper">
         <div class="content">
             <ul>
-                <sloft-slo @propss="xyq" >
+                <sloft-slo :namesa = "mesg" @propss="xyq" >
                     <div slot-scope="a">
                         {{a}}
                     </div>
@@ -55,10 +55,10 @@ export default {
             item:[1,2,3,5,6,7],
             value1: 2,
             value2: 2,
-            // mesg:{
-            //     name:'xiaoffaaa',
-            //     old:'26'
-            // }
+            mesg:{
+                name:'xiaoyanqiyayaya',
+                old:'26'
+            }
         }
     },
     mounted() {
@@ -81,9 +81,9 @@ export default {
       })
     },
     methods: {
-        xyq:function(msg){
-            this.mesg.name = msg;
-            console.log(msg)
+        xyq:function(msgs){
+            this.mesg.name = msgs;
+            console.log(msgs)
         }
     },
 }
@@ -91,5 +91,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" rel="stylesheet/scss" scoped>
-@import '../style/hell'
+    @import '../style/var';
+    @import '../style/hell';
 </style>

@@ -1,9 +1,7 @@
 <template>
     <div>
-        <h1 @click="aini">123</h1>
-        <slot say="爱你"></slot>
+        <h1 @click="aini">1234</h1>
         {{names}}
-        <p @click = "changeOld">how old are you ?</p>
     </div>
 </template>
 <script>
@@ -12,9 +10,8 @@ export default {
         return{
             aa:'',
             name:'xjj',
-            names:this.$store.getters.changeName
+            names:this.$store.state.sloft.mesg
         }
-        
     },
     // props:{
     //     names:{
@@ -28,11 +25,8 @@ export default {
     //     }
     // },
     methods: {
-        aini(){
+        aini:function(){
             this.$emit('propss',this.name)
-        },
-        changeOld(){
-            this.$store.commit('changeOld',2)
         }
     },
 }

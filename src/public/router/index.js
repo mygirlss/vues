@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import SloftSlo from '@/components/SloftSlo'
+import HelloWorld from '@/public/components/HelloWorld'
+import SloftSlo from '@/public/components/SloftSlo'
 
 Vue.use(Router)
 
