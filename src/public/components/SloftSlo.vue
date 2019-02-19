@@ -2,7 +2,7 @@
     <div>
         <h1 @click="aini">123</h1>
         <slot say="爱你"></slot>
-        {{namesa}}
+        {{names}}
         <p @click = "changeOld">how old are you ?</p>
         <p @click = "changeNames">who are you ?</p>
     </div>

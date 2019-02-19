@@ -28,11 +28,10 @@ const mutations = {
     }
 }
 const actions = {
-    changes(mutation,name){
+    changes({commit},name){
         setTimeout(() => {
-            mutation.commit('changeNames',name);
+            commit('changeNames','飞的提克吗');
         },1000)
-        console.log(state)
     }
 }
 export default {
