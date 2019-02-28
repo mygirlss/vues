@@ -3,13 +3,10 @@ let url = require('url');
 function start(route,handles){
 	function server(request,response){
         var pathname = url.parse(request.url).pathname;
-		response.writeHead(200,{'Content-Type':'text/plain'});
-		response.write('ainiyanqi');
-		response.end();
-		route(handles,pathname);
-        console.log("Request for " + pathname + " received.");
+		
+		route(handles,pathname,response);
 	}
-	http.createServer(server).listen(8888);
+	http.createServer(server).listen(9527);
 }
 exports.start = start;
 
